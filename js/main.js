@@ -15,6 +15,16 @@ function addDigit(digit) {
     document.calculator.display.value = current;
 }
 
-function addDecimal(digit) {
+function addDecimal() {
+    if (current[current.length - 1] == '.')
+    { current = current}
+    else
+    {current = current + '.';}
+    document.calculator.display.value = current;
+}
 
+
+function clearDisplay() {
+    document.calculator.display.value = "";
+    current = "0"
 }
