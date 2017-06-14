@@ -1,47 +1,47 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <HTML>
+    <script src='js/main.js'></script>
     <head>
         <title>
             JS calculator
         </title>
     </head>
-
+    <form name='calculator'>
     <body>
+        <input type='text' name='display'></input>
         <table>
-            <tr>
-                <input type="text" value='0'></input>
-            </tr>
+            <div class = "keys">
             <tr>
                 <td>
-                    <input type="button" value='1'></input>
+                    <input type='button'  value='1' onclick="addDigit('1')"></input>
                 </td>
                 <td>
-                    <input type="button" value='2'></input>
+                    <input type="button" value='2' onclick="addDigit('2')"></input>
                 </td>
                 <td>
-                    <input type="button" value='3'></input>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="button" value='4'></input>
-                </td>
-                <td>
-                    <input type="button" value='5'></input>
-                </td>
-                <td>
-                    <input type="button" value='6'></input>
+                    <input type="button" value='3' onclick="addDigit('3')"></input>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="button" value='7'></input>
+                    <input type="button" value='4' onclick="addDigit('4')"></input>
                 </td>
                 <td>
-                    <input type="button" value='8'></input>
+                    <input type="button" value='5' onclick="addDigit('5')"></input>
                 </td>
                 <td>
-                    <input type="button" value='9'></input>
+                    <input type="button" value='6' onclick="addDigit('6')"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value='7' onclick="addDigit('7')"></input>
+                </td>
+                <td>
+                    <input type="button" value='8' onclick="addDigit('8')"></input>
+                </td>
+                <td>
+                    <input type="button" value='9' onclick="addDigit('9')"></input>
                 </td>
             </tr>
             <tr>
@@ -49,7 +49,7 @@
                     <input type="button" value='.'></input>
                 </td>
                 <td>
-                    <input type="button" value='0'></input>
+                    <input type="button" value='0' onclick="addDigit('0')"></input>
                 </td>
                 <td>
                     <input type="button" value='C'></input>
@@ -76,6 +76,8 @@
                     <input type="button" value='='></input>
                 </td>
             </tr>
+            </div>
         </table>
+    </form>
     </body>
 </HTML>
