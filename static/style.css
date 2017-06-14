@@ -1,0 +1,13 @@
+body {
+    background-color: grey;
+}
+table {
+    text-align: center;
+    border-spacing: 1rem;
+    border-color: red;
+    background-color:black;
+    table-layout: auto;
+}
+td {
+    border: 1px;
+}

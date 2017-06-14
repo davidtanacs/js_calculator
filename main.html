@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <HTML>
     <script src='js/main.js'></script>
+    <link rel="stylesheet" href="static/style.css" ></link>
     <head>
         <title>
             JS calculator
@@ -8,9 +9,13 @@
     </head>
     <form name='calculator'>
     <body>
-        <input type='text' name='display'></input>
-        <table>
+        <table border="8" align='center'>
             <div class = "keys">
+            <tr>
+                <td colspan="3">
+                <input type='text' maxlength = "35" size="18" name='display'></input>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <input type='button'  value='1' onclick="addDigit('1')"></input>
@@ -57,23 +62,23 @@
             </tr>
             <tr>
                 <td>
-                    <input type="button" value='+'></input>
+                    <input type="button" value='+' onclick="addOperation('+')"></input>
                 </td>
                 <td>
-                    <input type="button" value='-'></input>
+                    <input type="button" value='-' onclick="addOperation('-')"></input>
                 </td>
                 <td>
-                    <input type="button" value='%'></input>
+                    <input type="button" value='%' onclick="addOperation('%')"></input>
                 </td>
             </tr>
             <td>
-                    <input type="button" value='*'></input>
+                    <input type="button" value='*' onclick="addOperation('*')"></input>
                 </td>
                 <td>
-                    <input type="button" value='/'></input>
+                    <input type="button" value='/' onclick="addOperation('/')"></input>
                 </td>
                 <td>
-                    <input type="button" value='='></input>
+                    <input type="button" value='=' onclick="executeOperation()"></input>
                 </td>
             </tr>
             </div>
