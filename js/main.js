@@ -35,14 +35,18 @@ function addOperation(operation) {
 }
 
 function executeOperation() {
-    if (current.includes('%')) {
-        current = calculatePercentage();
-    }
-    else {
-        current = eval(current);
-    }
-    document.calculator.display.value = current;
+    try {
+        if (current.includes('%')) {
+            current = calculatePercentage();
+        }
+        else {
+            current = eval(current);
+        }
+        document.calculator.display.value = current;
 }
+    catch(err) {
+        alert("Sorry, I cannot execute this.")
+    } }
 
 function calculatePercentage() {
     var base = ""
