@@ -11,3 +11,12 @@ table {
 td {
     border: 1px;
 }
+input[type="button"] {
+    border-radius: 12px;
+    padding: 12px 20px;
+}
+input[type="button"]:hover {
+    background-color: red;
+    color: white;
+    border-radius: 12px;
+}
